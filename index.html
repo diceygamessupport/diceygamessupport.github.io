@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dicey Games · Dicey Golf</title>
-<meta name="description" content="Dicey Golf - roll the dice, play the course. A clever golf game for iPhone with pass-and-play, a Daily Challenge and night golf.">
+<title>Dicey Games · Dicey Golf & Dicey Baseball</title>
+<meta name="description" content="Dicey Games for iPhone. Dicey Golf: roll the dice, play the course. Dicey Baseball: roll the dice, play ball.">
 <link rel="icon" href="icon.webp">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
@@ -99,6 +99,11 @@
   .night .text p { color: #a9b8d0; }
   .night .phone { box-shadow: 0 30px 80px rgba(108,255,240,.18); }
 
+  /* Dicey Baseball */
+  .bb-hero { background: linear-gradient(180deg, #eaf5fc 0%, #ffffff 70%); }
+  .bb-hero .eyebrow, .bb .eyebrow { color: #e8453c; }
+  .bb-hero .pill { background: #e8453c; }
+
   /* Coming soon */
   .soon { background: #000; color: #f5f5f7; }
   .soon .eyebrow { color: #ff6961; }
@@ -129,7 +134,7 @@
     <a class="brand" href="#top"><img src="icon.webp" alt="">Dicey Games</a>
     <div class="links">
       <a href="#golf">Dicey Golf</a>
-      <a class="hide-s" href="#baseball">Coming Soon</a>
+      <a href="#baseball">Dicey Baseball</a>
       <a href="#support">Support</a>
       <a href="privacy.html">Privacy</a>
     </div>
@@ -216,33 +221,79 @@
     </div>
   </section>
 
-  <!-- Coming soon -->
-  <section class="soon center" id="baseball">
+  <!-- Dicey Baseball -->
+  <section class="hero bb-hero center" id="baseball">
     <div class="wrap">
-      <svg class="baseball" viewBox="0 0 220 220" aria-label="Dicey Baseball teaser">
-        <defs>
-          <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3e6ea"/>
-          </linearGradient>
-          <clipPath id="clip"><rect x="20" y="20" width="180" height="180" rx="42"/></clipPath>
-        </defs>
-        <rect x="20" y="20" width="180" height="180" rx="42" fill="url(#face)"/>
-        <g clip-path="url(#clip)" fill="none" stroke="#e8453c" stroke-width="4" stroke-linecap="round">
-          <path d="M58 14 C 34 70, 34 150, 58 206"/>
-          <path d="M162 14 C 186 70, 186 150, 162 206"/>
-          <g stroke-width="3">
-            <path d="M44 48 l12 -4"/><path d="M40 70 l12 -2"/><path d="M38 92 l12 0"/><path d="M38 114 l12 1"/><path d="M39 136 l12 2"/><path d="M42 158 l12 4"/><path d="M47 180 l11 5"/>
-            <path d="M176 48 l-12 -4"/><path d="M180 70 l-12 -2"/><path d="M182 92 l-12 0"/><path d="M182 114 l-12 1"/><path d="M181 136 l-12 2"/><path d="M178 158 l-12 4"/><path d="M173 180 l-11 5"/>
-          </g>
-        </g>
-        <circle cx="110" cy="74" r="13" fill="#1d1d1f"/>
-        <circle cx="110" cy="110" r="13" fill="#e8453c"/>
-        <circle cx="110" cy="146" r="13" fill="#1d1d1f"/>
-      </svg>
-      <div class="eyebrow">Next up.</div>
-      <h2>Dicey Baseball.</h2>
-      <p class="body">Roll for hits, steal bases, and swing for the fences. The next Dicey game is warming up in the bullpen.</p>
-      <span class="badge">Coming soon</span>
+      <img class="icon" src="bb-icon.webp" alt="Dicey Baseball app icon">
+      <div class="eyebrow">New from Dicey Games.</div>
+      <h1>Dicey Baseball</h1>
+      <p class="lead">Roll the dice. Play ball.</p>
+      <span class="pill">Coming soon to the App Store <small>· iPhone</small></span>
+      <div class="phones">
+        <div class="phone"><img src="bb-pitch.webp" alt="Calling the pitch against the computer"></div>
+        <div class="phone big"><img src="bb-flight.webp" alt="A home run in flight with its tracer and apex"></div>
+        <div class="phone"><img src="bb-timeout.webp" alt="Deciding whether to use a Timeout"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt bb">
+    <div class="wrap row">
+      <div class="text">
+        <div class="eyebrow">Every at-bat starts with a roll.</div>
+        <h2>Two dice.<br>Nine innings.</h2>
+        <p>Add up the two dice and the chart decides: a single, a double, a home run - or a strikeout. Roll doubles for a Hot Bat and roll again, keeping the better result. Snake eyes is a home run and a bonus Timeout. Rolled an out? Spend a Timeout to re-roll it.</p>
+      </div>
+      <div class="media">
+        <div class="phone"><img src="bb-timeout.webp" alt="Play it or call a Timeout"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bb">
+    <div class="wrap row flip">
+      <div class="text">
+        <div class="eyebrow">You call the pitch.</div>
+        <h2>Outsmart the computer.</h2>
+        <p>Throw a fastball, issue an intentional walk to set up a double play, or bring the infield in to cut off a run at the plate. Play Rookie, Pro or All-Star - or hand the phone to a friend for pass-and-play. Down a run in the last inning? Walk it off.</p>
+      </div>
+      <div class="media">
+        <div class="phone"><img src="bb-pitch.webp" alt="Fastball, Intentional Walk or Infield In"></div>
+        <div class="phone"><img src="bb-walkoff.webp" alt="Walk-off win"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="night">
+    <div class="wrap row">
+      <div class="text">
+        <div class="eyebrow">Night games.</div>
+        <h2>Play under the lights.</h2>
+        <p>Win a game to unlock night baseball - stadium lights, a glowing neon ball and a neon tracer on every big hit.</p>
+      </div>
+      <div class="media">
+        <div class="phone"><img src="bb-night.webp" alt="A night game with the neon ball"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt center">
+    <div class="wrap">
+      <h2>A whole season to play.</h2>
+      <p class="body">Five ballparks, a new puzzle every day, and plenty to collect along the way.</p>
+      <div class="grid">
+        <div class="tile"><div class="emoji">🏟</div><h3>5 stadiums</h3><p>From The Sandlot to Big League Stadium - each one unlocked by winning.</p></div>
+        <div class="tile"><div class="emoji">📅</div><h3>Daily Challenge</h3><p>A new bottom-of-the-9th puzzle every day, the same for everyone. Keep your streak alive.</p></div>
+        <div class="tile"><div class="emoji">🏆</div><h3>20 achievements</h3><p>Grand Slam, Walk-Off, Comeback Kid… each one earns a baseball or a bat.</p></div>
+        <div class="tile"><div class="emoji">⚾️</div><h3>Balls & bats</h3><p>Collect 13 baseballs and 9 bats, from the Firework ball to the Golden bat.</p></div>
+        <div class="tile"><div class="emoji">⚡️</div><h3>Rallies & extras</h3><p>Three on base in a row brings the organ. Tied games go to extra innings.</p></div>
+        <div class="tile"><div class="emoji">💾</div><h3>Always saved</h3><p>Your game saves after every at-bat. Pick up right where you left off.</p></div>
+      </div>
+      <div class="phones">
+        <div class="phone"><img src="bb-locker.webp" alt="Baseball locker"></div>
+        <div class="phone big"><img src="bb-menu.webp" alt="Main menu"></div>
+        <div class="phone"><img src="bb-trophies.webp" alt="Trophies"></div>
+      </div>
     </div>
   </section>
 
@@ -254,24 +305,28 @@
       <p class="contact"><a href="mailto:diceygames.support@gmail.com">diceygames.support@gmail.com</a></p>
       <div class="faq">
         <details>
-          <summary>How do I restore Dicey Golf Pro on a new phone?</summary>
-          <p>Open Dicey Golf, tap ⭐️ Pro on the main screen, then tap <strong>Restore Purchases</strong>. Make sure you're signed in with the same Apple ID you used to buy it.</p>
+          <summary>How do I restore Pro on a new phone?</summary>
+          <p>Open the game, tap ⭐️ Pro on the main screen, then tap <strong>Restore Purchases</strong>. Make sure you're signed in with the same Apple ID you used to buy it. Dicey Golf Pro and Dicey Baseball Pro are separate purchases.</p>
         </details>
         <details>
-          <summary>How do I unlock courses and night golf without paying?</summary>
-          <p>Just play. Finishing a course unlocks the next one, finishing any course unlocks Random Links, and finishing a course under par unlocks its Night Golf version. Every achievement earns a new golf ball.</p>
+          <summary>How do I unlock things without paying?</summary>
+          <p>Just play. In Dicey Golf, finishing a course unlocks the next one, and finishing under par unlocks its Night Golf version. In Dicey Baseball, winning unlocks new stadiums and night games. In both games, every achievement earns a new ball (or bat).</p>
+        </details>
+        <details>
+          <summary>What are Timeouts in Dicey Baseball?</summary>
+          <p>Each game you get 3 Timeouts. When you roll an out, tap <strong>Timeout</strong> to re-roll it. Rolling snake eyes (1-1) earns a bonus Timeout, and you can watch an optional ad for an extra one.</p>
         </details>
         <details>
           <summary>How do I turn off personalized ads?</summary>
-          <p>Go to <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong> on your iPhone and turn tracking off for Dicey Golf. Ads will still appear, but they won't be personalized. Dicey Golf Pro removes the ads between holes.</p>
+          <p>Go to <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong> on your iPhone and turn tracking off for the game. Ads will still appear, but they won't be personalized. Pro removes the ads between holes and innings.</p>
         </details>
         <details>
-          <summary>I closed the app in the middle of a round. Is it lost?</summary>
-          <p>No - your round saves after every shot. Tap <strong>Resume</strong> on the main screen to pick up where you left off.</p>
+          <summary>I closed the app in the middle of a game. Is it lost?</summary>
+          <p>No - Dicey Golf saves after every shot and Dicey Baseball after every at-bat. Tap <strong>Resume</strong> on the main screen to pick up where you left off.</p>
         </details>
         <details>
           <summary>How do I reset my progress?</summary>
-          <p>Tap the ⚙︎ gear on the main screen, then <strong>Reset all progress</strong> and tap it again to confirm. This erases achievements, balls, unlocks, stats and best scores on that device.</p>
+          <p>Tap the ⚙︎ gear on the main screen, then <strong>Reset all progress</strong> and tap it again to confirm. This erases achievements, collectibles, unlocks, stats and any saved game on that device.</p>
         </details>
       </div>
     </div>
